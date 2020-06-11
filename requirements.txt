@@ -1,1 +1,13 @@
+# Python
+singleton-decorator==1.0.0
+cached-property==1.5.1
+timeout-decorator==0.4.1
+pycrypto==2.6.1
+pycryptodome==3.9.7
+
+# Server
 Flask==1.1.1
+
+
+# DB
+pymongo==3.10.1

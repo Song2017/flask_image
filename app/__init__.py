@@ -1,6 +1,3 @@
-"""
- Created by 七月 on 2018-2-5.
-"""
 from flask import Flask
 
 
@@ -8,7 +5,7 @@ from flask import Flask
 # from app.models.book import db
 # from flask_mail import Mail
 # from flask_cache import Cache
-# from app.libs.limiter import Limiter
+# from app.utils.limiter import Limiter
 
 # login_manager = LoginManager()
 # mail = Mail()
@@ -40,5 +37,4 @@ def create_app():
 
 def register_blueprint_ex(app: Flask):
     from app.web import web
-    print('app_init', id(web))
     app.register_blueprint(web)

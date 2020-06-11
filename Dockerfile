@@ -4,10 +4,11 @@ WORKDIR /app
 
 ADD . /app
 
-RUN pip install --trusted-host pypi.python.org -r requirements.txt
+RUN set -ex \
+    && apt-get update && apt-get install -y vim \
+    && pip install --upgrade pip \
+    && pip install --trusted-host pypi.python.org -r requirements.txt
 
-EXPOSE 9001
-
-ENV NAME world
+EXPOSE 9005 9001
 
 CMD ["python", "app.py"]

@@ -1,2 +1,2 @@
-DEBUG = False
+DEBUG = True
 PORT = 9001
